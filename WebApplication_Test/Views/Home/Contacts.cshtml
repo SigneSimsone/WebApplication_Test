@@ -1,0 +1,15 @@
+﻿
+@model WebApplication_Test.Models.Contacts
+
+<h1>Contact information</h1>
+
+@{
+<p>Names:</p>
+    for (int i = 0; i < 5; i++)
+    {
+        <ul>
+            <li>@Model.ContactsNames[i]</li>
+        </ul>
+        
+    }
+}
